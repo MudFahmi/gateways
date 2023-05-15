@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import GatewayList from "./views/GatewayList";
+import GatewayDetails from "./views/GatewayDetails";
+import DefaultLayout from "./layouts/DefaultLayout";
 
-export default App;
+const App = () => (
+  <DefaultLayout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={GatewayList} />
+        <Route path="/gateways/:serialNumber" Component={GatewayDetails} />
+      </Routes>
+    </BrowserRouter>
+  </DefaultLayout>
+)
+
+export default App
