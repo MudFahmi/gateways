@@ -71,7 +71,6 @@ const GatewayDialog = (props: GatewayDialogProps) => {
         <div>
             <Dialog
                 open={open}
-                onClose={onClose}
                 fullWidth
                 maxWidth="sm"
             >

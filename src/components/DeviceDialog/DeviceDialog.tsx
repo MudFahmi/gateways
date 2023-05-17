@@ -68,7 +68,6 @@ const DeviceDialog = (props: DeviceDialogProps) => {
         <div>
             <Dialog
                 open={open}
-                onClose={onClose}
                 fullWidth
                 maxWidth="sm"
             >
