@@ -1,12 +1,8 @@
 
-# Project Title
+# Gateways
 
-A brief description of what this project does and who it's for
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+this project is for managing gateways by register and remove them, also register multiple devices under every gateway and help to manage that. 
+ 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -34,6 +30,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Testing Packages
+
+#### 1. React testing library 
+#### 2. jest 
 
 ## TODO Enhancements
 
